@@ -1,0 +1,11 @@
+python test.py \
+        --datapath "FSS Data path" \
+        --benchmark pascal \
+        --fold {0, 1, 2, 3} \
+        --bsz 1 \
+        --nworker 8 \
+        --backbone {resnet50, resnet101} \
+        --feature_extractor_path "Pre-trained backbone" \
+        --logpath "log path" \
+        --load "Pretrained DFBNet model" \
+        --nshot {1, 5}

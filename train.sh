@@ -1,0 +1,12 @@
+python -m torch.distributed.launch train.py \
+        --datapath "FSS Data path" \
+        --benchmark {pascal, coco} \
+        --fold {0, 1, 2, 3} \
+        --nshot {1, 5} \
+        --bsz 16 \
+        --nworker 8 \
+        --backbone {resnet50, resnet101} \
+        --feature_extractor_path "Pre-trained backbones path" \
+        --logpath "log path" \
+        --lr 1e-3 \
+        --nepoch 200
