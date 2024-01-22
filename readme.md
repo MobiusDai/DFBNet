@@ -77,7 +77,7 @@ You can use our scripts to build your own. For more information, please refer to
 
 For testing, you have to prepare a pretrained model. The pretrained model of DFBNet will be released soon. 
 > ```bash
-> sh ./scripts/test.sh
+> sh test.sh
 > ```
 > 
 
